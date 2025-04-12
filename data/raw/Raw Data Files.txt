@@ -1,0 +1,3 @@
+The following link is where to access the raw data for this project
+
+https://divvy-tripdata.s3.amazonaws.com/index.html
