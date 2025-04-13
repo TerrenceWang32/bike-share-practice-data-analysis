@@ -1,0 +1,36 @@
+Processed data
+
+The raw data contains the following features:
+- ride_id: the unique identifier for each ride
+- rideable_type: the type of rides available, including: electric_bike, classic_bike, electric_scooter
+- started_at: trip start time
+- ended_at: trip ended time
+- start_station_name
+- start_station_id
+- end_station_name
+- end_station_id
+- start_lat: trip starting latitude
+- start_lng: trip starting longitude
+- end_lat: trip ending latitude
+- end_lng: trip ending longitude
+- member_casual: two different types of riders, members and casual riders
+
+Processing the data:
+Upon inspecting the data, there is significant amount of missing data of
+- start_station_name
+- start_station_id
+- end_station_name
+- end_station_id
+- end_lat
+- end_lng
+The missing data of start station (18.68%) and end station (19.20%) may have significant impact to the outcome if dropped the records completely.
+Meanwhile, by further investigating into the missing data, other insights not related to the subject of this analysis may be discovered also to help the company improve future performance.
+
+Thus to process the data, instead of dropping any data, the following features were added to facilitate the analysis
+- trip_duration
+- year
+- month
+- wk: day of the week
+- hour
+
+Before the addition of the above features, all 12 months' data were joined together into one big data source, which is why it is not included here.
